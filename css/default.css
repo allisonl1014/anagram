@@ -1,0 +1,72 @@
+/* this is where all of your CSS styles go */
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+#grid_container {
+	width: 300px;
+	height: 200px;
+	position: relative;
+	left: 48%;
+	top: 30%; /* for optical centering */
+	margin-top: 150px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-family: 'Fjalla One';
+	font-size: 4em;
+	float: left;
+	margin-left: 0px;
+	margin-top: -80px;
+}
+
+
+@-webkit-keyframes leaf_move {
+	0% {top: 0px;}
+	50% {top: -150px;}
+	100% {top: 0px;}
+}
+
+#leaf {
+	position: relative;
+	-webkit-animation: leaf_move 4s linear;
+}
+
+@-webkit-keyframes knows_move {
+	0% {right: 0px;}
+	50% {right: 100px;}
+	100% {right: 0px;}
+}
+
+#knows {
+	position: relative;
+	-webkit-animation: knows_move 2s;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes snow_fade {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+#snow {
+	opacity: 0;
+	-webkit-animation: snow_fade 2s linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@-webkit-keyframes flake_fade {
+	0% {opacity: 0; color: black;}
+	100% {opacity: 1; color: blue;}
+}
+
+#flake {
+	opacity: 0;
+	-webkit-animation: flake_fade 2s linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 4s;
+}
+
